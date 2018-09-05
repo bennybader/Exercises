@@ -1,0 +1,13 @@
+x = list (input("Enter a string to combine letters and numbers seprated with space: "))
+print(x)
+ 
+x[0] = "H" # Change the 1st character using its index
+x[7] = "W" # Change the 3rd character using its index
+print(x)
+ 
+x = "".join(x) # Change the list back to string
+print(x)
+
+number = [int(s) for s in x.split() if s.isdigit()]
+print ("The number you intered in the string is:")
+print (number)
